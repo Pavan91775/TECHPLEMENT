@@ -1,52 +1,52 @@
 # TECHPLEMENT_TASK
 
 Commands
-
 1. Install apache server on Ubuntu
    
-**sudo apt install apache2**
+   > **sudo apt install apache2**
 
-3. Install php runtime and php mysql connector
+2. Install php runtime and php mysql connector
    
-**sudo apt install php libapache2-mod-php php-mysql**
+   > **sudo apt install php libapache2-mod-php php-mysql**
 
-5. Install MySQL server
+3. Install MySQL server
    
-**sudo apt install mysql-server**
+   > **sudo apt install mysql-server**
 
-7. Login to MySQL server
+4. Login to MySQL server
    
-**sudo mysql -u root**
+   > **sudo mysql -u root**
 
-9. Change authentication plugin to mysql_native_password (Choose strong password)
+5. Change authentication plugin to mysql_native_password (Choose strong password)
     
-**ALTER USER 'root'@'localhost' IDENTIFIED BY 'bablu123456';**  
+   > **ALTER USER 'root'@'localhost' IDENTIFIED BY 'bablu123456';**  
 
-11. Create a database for wordpress
+6. Create a database for wordpress
     
-**CREATE DATABASE bablu_db;**
+    > **CREATE DATABASE bablu_db;**
 
-13. Create a new database user for wordpress
+7. Create a new database user for wordpress
     
-**CREATE USER 'bablu_user'@localhost IDENTIFIED BY 'bablu123456';**
+    > **CREATE USER 'bablu_user'@localhost IDENTIFIED BY 'bablu123456';**
 
 
-15. Grant all privileges on the database 'wordpress' to the newly created user
+8. Grant all privileges on the database 'wordpress' to the newly created user
     
-***GRANT ALL PRIVILEGES ON bablu_db.* TO 'bablu_user'@'%';**
-**FLUSH PRIVILEGES;**
+    > ***GRANT ALL PRIVILEGES ON bablu_db.* TO 'bablu_user'@'%';**
+    > **FLUSH PRIVILEGES;**
 
-17. Download wordpress
+9. Download wordpress
     
-**cd /tmp wgethttps://wordpress.org/latest.tar.gz**
+    > **cd /tmp wgethttps://wordpress.org/latest.tar.gz**
 
-19. Unzip the file
+10. Unzip the file
     
-**tar -xvf latest.tar.gz**
+    > **tar -xvf latest.tar.gz**
 
-21. Move Wordpress folder to apache document root
+11. Move Wordpress folder to apache document root
     
-**sudo mv wordpress/ /var/www/html**
+   > **sudo mv wordpress/ /var/www/html**
 
-23. Command to restart apache server
-**sudo systemctl restart apache2**
+12. Command to restart apache server
+    
+    > **sudo systemctl restart apache2**
