@@ -45,7 +45,7 @@ Commands
 
 11. Move Wordpress folder to apache document root
     
-   > **sudo mv wordpress/ /var/www/html**
+    > **sudo mv wordpress/ /var/www/html**
 
 12. Command to restart apache server
     
