@@ -33,6 +33,7 @@ Commands
 8. Grant all privileges on the database 'wordpress' to the newly created user
     
     > **GRANT ALL PRIVILEGES ON bablu_db.*** **TO 'bablu_user'@'%';**
+    
     > **FLUSH PRIVILEGES;**
 
 9. Download wordpress
