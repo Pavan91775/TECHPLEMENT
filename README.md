@@ -2,9 +2,9 @@
 
 Commands
 1. Install apache server on Ubuntu
-   
+    ```
    > **sudo apt install apache2**
-
+    ```
 2. Install php runtime and php mysql connector
    
    > **sudo apt install php libapache2-mod-php php-mysql**
